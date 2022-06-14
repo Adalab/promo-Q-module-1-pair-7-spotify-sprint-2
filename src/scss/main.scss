@@ -8,6 +8,7 @@
 @import 'pages/index';
 @import 'layout/seccion-azul'
 @import 'layout/seccion-blanca'
+@import 'components/signup'
 */
 
 @import 'core/variables';
@@ -19,7 +20,7 @@
 
 /* main */
 
-
+@import 'components/signup';
 
 
 
