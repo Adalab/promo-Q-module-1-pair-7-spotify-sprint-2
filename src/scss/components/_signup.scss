@@ -15,3 +15,26 @@
     font-weight: bold;
     font-size: 36px;
 }
+
+.fieldset{
+   border-style: none;
+   line-height: 30px;
+}
+
+.button-sesion{
+    color: $color-hover-header;
+}
+.button{
+    background-color:$color-hover-header ;
+    border-style: none;
+    border-radius: 50px;
+    width:200px;
+    height: 40px;
+    font-weight: bold;
+}
+.button-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

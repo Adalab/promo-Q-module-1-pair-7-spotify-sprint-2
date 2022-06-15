@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Signup page</title>
-  </head>
-  <body>
-    <header class="header">
-      <img class="image" src="./assets/images/logo.png" alt="Logo spotify" />
-    </header>
-    <main>
-      <h1 class="main-title">Registrate gratis para escuchar.</h1>
-      <fieldset>
-        Registrate con tu correo electronico
-        <form action="https://adalab-server-form.herokuapp.com/">
-          <div>
-            <label for="mail">¿Cual es tu correo electronico?</label>
-            <input
-              placeholder="pon tu correo electronico."
-              type="email"
-              id="mail"
-            />
-          </div>
-          <div>
-            <label for="mail">Confirma el correo electronico</label>
-            <input
-              placeholder="vuelve a poner tu correo electronico."
-              type="email"
-              id="mail"
-            />
-          </div>
-          <div>
-            <label for="password">Crea una contraseña</label>
-            <input
-              placeholder="Crea una contraseña."
-              type="password"
-              id="password"
-            />
-          </div>
-          <div>
-            <label for="text">¿Como quieres que te llamemos?</label>
-            <input
-              placeholder="Pon un nombre de perfil."
-              type="text"
-              id="text"
-            />
-          </div>
-          <div>
-            <label for="date">¿Cual es tu fecha de nacimiento?</label>
-            <input placeholder="" type="date" id="date" />
-          </div>
-        </form>
-      </fieldset>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>Signup page</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="image" src="./assets/images/logo.png" alt="Logo spotify" />
+  </header>
+  <main>
+    <h1 class="main-title">Registrate gratis para escuchar.</h1>
+    <fieldset class="fieldset">
+      Registrate con tu correo electronico
+      <form action="https://adalab-server-form.herokuapp.com/">
+        <div>
+          <label for="mail">¿Cual es tu correo electronico?</label>
+          <input placeholder="pon tu correo electronico." type="email" id="mail" />
+        </div>
+        <div>
+          <label for="mail">Confirma el correo electronico</label>
+          <input placeholder="vuelve a poner tu correo electronico." type="email" id="mail" />
+        </div>
+        <div>
+          <label for="password">Crea una contraseña</label>
+          <input placeholder="Crea una contraseña." type="password" id="password" />
+        </div>
+        <div>
+          <label for="text">¿Como quieres que te llamemos?</label>
+          <input placeholder="Pon un nombre de perfil." type="text" id="text" />
+        </div>
+        <div>
+          <label for="date">¿Cual es tu fecha de nacimiento?</label>
+          <label for="day">Día</label>
+          <input placeholder="DD" type="text" id="day" />
+          <label for="month">Mes</label>
+          <select id="month" name="Month">
+            <option selected disabled value="">Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+          <label for="year">Año</label>
+          <input placeholder="AAAA" type="number" id="year" />
+        </div>
+        <div>
+          <label for="genero">¿Cuál es tu género?</label>
+          <input type="radio" name="radioType" id="radioType1" value="1" required>
+          <label for="radioType2">Hombre</label>
+          <input type="radio" name="radioType" id="radioType2" value="2" required>
+          <label for="radioType2">Mujer</label>
+          <input type="radio" name="radioType" id="radioType3" value="3" required>
+          <label for="radioType3">No binario</label>
+        </div>
+        <div>
+          <input type="checkbox" name="checkboxType" id="checkboxType1" value="A">
+          <label for="checboxType1">Quiero que me enviéis novedades y ofertas de Spotify</label>
+          <input type="checkbox" name="checkboxType" id="checkboxType2" value="B">
+          <label for="checboxType2">Compartir mis datos de registro con los proveedores de contenidos de Spotify para
+            fines de marketing.Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE,tal y como
+            se recoge en nuestra Política de Privacidad.</label>
+        </div>
+
+      </form>
+    </fieldset>
+    <div class="button-footer">
+      <input class="button" type="submit" value="Regístrate">
+      <p> ¿Ya tienes cuenta?<a class="button-sesion" href="#">Inicia sesión</a>. </p>
+    </div>
+  </main>
+</body>
+
 </html>
